@@ -1,0 +1,31 @@
+services:
+  # 1. 我們的 Python 網頁
+  dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app
+    environment:
+      # 告訴 Python 資料庫連線字串 (這是 Docker 內網位址)
+      # 格式: postgresql://帳號:密碼@服務名稱:埠號/資料庫名
+      - DATABASE_URL=postgresql://user:password@db:5432/quantdb
+    depends_on:
+      - db  # 確保資料庫先啟動，網頁再啟動
+    command: streamlit run main.py --server.port=8501 --server.address=0.0.0.0
+
+  # 2. PostgreSQL 資料庫服務
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: quantdb
+    volumes:
+      # 這裡就是把資料存到「永久記憶卡」
+      - postgres_data:/var/lib/postgresql/data
+
+# 定義這張「永久記憶卡」
+volumes:
+  postgres_data:

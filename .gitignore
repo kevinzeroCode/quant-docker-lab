@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+
+# Docker 環境變數 
+.env
+
+# 如果你有把資料庫掛載在專案資料夾內 
+postgres_data/

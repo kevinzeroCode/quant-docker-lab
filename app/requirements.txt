@@ -1,0 +1,6 @@
+streamlit
+yfinance
+pandas
+plotly
+sqlalchemy
+psycopg2-binary
