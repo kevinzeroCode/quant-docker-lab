@@ -1,4 +1,4 @@
-\# 📈 Docker Quant Dashboard (量化金融儀表板)
+# 📈 Docker Quant Dashboard (量化金融儀表板)
 
 
 
@@ -8,37 +8,37 @@
 
 
 
-\## ✨ 專案亮點 (Key Features)
+## ✨ 專案亮點 (Key Features)
 
 
 
-\* \*\*容器化架構 (Dockerized):\*\* 使用 Docker Compose 編排 App 與 DB 服務。
+* **容器化架構 (Dockerized):** 使用 Docker Compose 編排 App 與 DB 服務。
 
-\* \*\*資料持久化 (Persistence):\*\* 透過 Docker Volume 確保資料庫資料不丟失。
+* **資料持久化 (Persistence):** 透過 Docker Volume 確保資料庫資料不丟失。
 
-\* \*\*智慧快取機制:\*\* 優先查詢 PostgreSQL 資料庫，若無資料才透過 API 下載，大幅提升效能。
+* **智慧快取機制:** 優先查詢 PostgreSQL 資料庫，若無資料才透過 API 下載，大幅提升效能。
 
-\* \*\*互動式圖表:\*\* 整合 K 線圖 (Candlestick) 與移動平均線 (SMA) 指標。
-
-
-
-\## 🛠️ 技術堆疊 (Tech Stack)
+* **互動式圖表:** 整合 K 線圖 (Candlestick) 與移動平均線 (SMA) 指標。
 
 
 
-\* \*\*Infrastructure:\*\* Docker, Docker Compose
-
-\* \*\*Backend/Frontend:\*\* Python 3.10, Streamlit
-
-\* \*\*Database:\*\* PostgreSQL 15
-
-\* \*\*Data Processing:\*\* Pandas, SQLAlchemy, YFinance
-
-\* \*\*Visualization:\*\* Plotly
+## 🛠️ 技術堆疊 (Tech Stack)
 
 
 
-\## 🚀 如何執行 (How to Run)
+* **Infrastructure:** Docker, Docker Compose
+
+* **Backend/Frontend:** Python 3.10, Streamlit
+
+* **Database:** PostgreSQL 15
+
+* **Data Processing:** Pandas, SQLAlchemy, YFinance
+
+* **Visualization:** Plotly
+
+
+
+## 🚀 如何執行 (How to Run)
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-\### 1. Clone 專案
+### 1. Clone 專案
 
 ```bash
 
@@ -56,7 +56,7 @@ cd quant-docker-lab
 
 ```
 
-\### 2. 啟動專案
+### 2. 啟動專案
 
 ```bash
 
@@ -64,7 +64,7 @@ docker compose up
 
 ```
 
-\### 3. 開始使用
+### 3. 開始使用
 
 打開瀏覽器前往： http://localhost:8501
 
